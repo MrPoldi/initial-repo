@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Rejestracja użytkownika</title>
+        <meta name="description" content="Strona do rejestracji nowych użytkowników dla bikola" />
+        <meta name="author" content="PawelPruchniak" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+    </head>
+    <body>
+        <div class="container">
+                    <div id="wrapper">
+                        <div id="register">
+                            <form  action="mysuperscript.php" autocomplete="on"> 
+                                <p> 
+                                    <label for="phonenumber" class="uphonenumber"> Numer telefonu(login): </label>
+                                    <input id="phonenumber" name="phonenumber" required="required" type="number"/>
+                                </p>
+                                <p> 
+                                    <label for="userfullname" class="ufullname"> Imię i nazwisko: </label>
+                                    <input id="userfullname" name="userfullname" required="required" type="text"/>
+                                </p>
+                                <p> 
+                                    <label for="username" class="uname"> Nazwa użytkownika: </label>
+                                    <input id="username" name="username" required="required" type="text"/>
+                                </p>
+                                <p> 
+                                    <label for="password" class="upassword"> Hasło: </label>
+                                    <input id="password" name="password" required="required" type="password"/>
+                                </p>
+                                <p> 
+                                    <label for="password_confirm" class="upassword"> Powtórz hasło: </label>
+                                    <input id="password_confirm" name="password_confirm" required="required" type="password"/>
+                                </p>
+                                <p> 
+                                    <label for="availability" class="uavailability"> Godziny dostępności </label>
+                                    <input id="availability" name="availability" required="required" type="text"/> 
+                                </p>
+								</p>
+                                <p class="register button"> 
+                                    <input type="submit" value="Zarejestruj" /> 
+								</p>
+                            </form>
+                        </div>
+                    </div>
+        </div>
+    </body>
+</html>
