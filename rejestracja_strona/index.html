@@ -5,44 +5,39 @@
         <title>Rejestracja użytkownika</title>
         <meta name="description" content="Strona do rejestracji nowych użytkowników dla bikola" />
         <meta name="author" content="PawelPruchniak" />
-        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700">
+        <link rel="stylesheet" href="../assets/css/styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     </head>
     <body>
         <div class="container">
-                    <div id="wrapper">
-                        <div id="register">
-                            <form  action="mysuperscript.php" autocomplete="on"> 
-                                <p> 
-                                    <label for="phonenumber" class="uphonenumber"> Numer telefonu(login): </label>
-                                    <input id="phonenumber" name="phonenumber" required="required" type="number"/>
-                                </p>
-                                <p> 
-                                    <label for="userfullname" class="ufullname"> Imię i nazwisko: </label>
-                                    <input id="userfullname" name="userfullname" required="required" type="text"/>
-                                </p>
-                                <p> 
-                                    <label for="username" class="uname"> Nazwa użytkownika: </label>
-                                    <input id="username" name="username" required="required" type="text"/>
-                                </p>
-                                <p> 
-                                    <label for="password" class="upassword"> Hasło: </label>
-                                    <input id="password" name="password" required="required" type="password"/>
-                                </p>
-                                <p> 
-                                    <label for="password_confirm" class="upassword"> Powtórz hasło: </label>
-                                    <input id="password_confirm" name="password_confirm" required="required" type="password"/>
-                                </p>
-                                <p> 
-                                    <label for="availability" class="uavailability"> Godziny dostępności </label>
-                                    <input id="availability" name="availability" required="required" type="text"/> 
-                                </p>
-								</p>
-                                <p class="register button"> 
-                                    <input type="submit" value="Zarejestruj" /> 
-								</p>
+                    <div id="wrapper">                        
+                            <form id=register-form action="mysuperscript.php" autocomplete="on">                                
+                                <label for="phonenumber" class="uphonenumber"> Numer telefonu: </label>
+                                <input id="phonenumber" class="form-control login-input" name="phonenumber" required="required" type="text"/>                                
+                                
+                                <label for="userfullname" class="ufullname"> Imię i nazwisko: </label>
+                                <input id="userfullname" class="form-control login-input" name="userfullname" required="required" type="text"/>                                
+                                
+                                <label for="username" class="uname"> Nazwa użytkownika: </label>
+                                <input id="username" class="form-control login-input" name="username" required="required" type="text"/>
+                                 
+                                <label for="password" class="upassword"> Hasło: </label>
+                                <input id="password" class="form-control password-input" name="password" required="required" type="password"/>
+                                 
+                                <label for="password_confirm" class="upassword"> Powtórz hasło: </label>
+                                <input id="password_confirm" class="form-control password-input"name="password_confirm" required="required" type="password"/>
+                                 
+                                <label for="availability" class="availability"> Godziny dostępności </label>
+                                <input id="availability" name="availability" class="form-control login-input" required="required" type="text"/> 
+                                
+                                <ul>
+                                    <li><a class="login-button" href="#">Zatwierdź</a></li>                                    
+                                </ul>
                             </form>
                         </div>
-                    </div>
+                    
         </div>
     </body>
 </html>
