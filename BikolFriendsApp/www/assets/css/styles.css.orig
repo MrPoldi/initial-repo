@@ -16,6 +16,7 @@ html, body {
   height: 100%;
 }
 
+<<<<<<< HEAD
 #ustawienia {
   position: absolute;
   display: table;
@@ -23,6 +24,11 @@ html, body {
   left: 30%;
 }
 
+#login-form {
+  width: 70%;
+  max-width: 300px;
+  height: 212px;
+=======
 #login-form {
   width: 70%;
   max-width: 300px;
@@ -41,6 +47,7 @@ html, body {
   width: 70%;
   max-width: 300px;
   height: auto;
+>>>>>>> 038c26a017526b54891870d21ba4bb68da097753
   margin: 0 auto;
   background-color: #000;
   border-radius: 40px;
@@ -70,8 +77,6 @@ ul {
 .login-button, .login-button:hover {
   font-size: 20px;
   color: rgb(70,200,70);
-  background: none;
-  border: none;
 }
 
 .no-account-button, .no-account-button:hover {
@@ -112,6 +117,52 @@ ul {
   transform: translate(-50%, -70%);
 }
 
+<<<<<<< HEAD
+.utitle {
+  position: relative;
+}
+
+.pasek-u {
+  max-width: 50%;
+  height: auto;
+}
+
+.emotka-u {
+  position: absolute;
+  width: 6%;
+  margin-left: 10px;
+  margin-top: 2%;
+}
+
+.uitems {
+  margin-top: 2%;
+}
+
+.img-rest {
+  max-width: 10%;
+  height: auto;
+}
+
+.img-klucz {
+  max-width: 8%;
+  margin-left: 1%;
+  height: auto;
+}
+
+.ut {
+  display: inline;
+  margin-left: 5%;
+  color: white;
+  font-size: 200%;
+}
+
+.ut2 {
+  display: inline;
+  margin-left: 6%;
+  color: white;
+  font-size: 200%;
+}
+=======
 #homescreen{
   width: 70%;
   max-width: 300px;
@@ -230,47 +281,4 @@ ul {
   max-height: 100%;
 }
 
-.utitle {
-  position: relative;
-}
-
-.pasek-u {
-  max-width: 50%;
-  height: auto;
-}
-
-.emotka-u {
-  position: absolute;
-  width: 6%;
-  margin-left: 10px;
-  margin-top: 2%;
-}
-
-.uitems {
-  margin-top: 2%;
-}
-
-.img-rest {
-  max-width: 10%;
-  height: auto;
-}
-
-.img-klucz {
-  max-width: 8%;
-  margin-left: 1%;
-  height: auto;
-}
-
-.ut {
-  display: inline;
-  margin-left: 5%;
-  color: white;
-  font-size: 200%;
-}
-
-.ut2 {
-  display: inline;
-  margin-left: 6%;
-  color: white;
-  font-size: 200%;
-}
+>>>>>>> 038c26a017526b54891870d21ba4bb68da097753
