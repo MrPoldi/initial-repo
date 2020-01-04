@@ -1,5 +1,5 @@
 $(document).ready(function() {
-                var url = "http://localhost/php1/initial-repo/contacts.php";
+                var url = "http://localhost/bikol/contacts.php";
                 $.getJSON(url, function(result) {
                         $.each(result, function(i, field) {
                             var name = field.name;
