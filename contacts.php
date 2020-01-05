@@ -1,4 +1,6 @@
-<!DOCTYPE html>
+<?php
+   include('php/session.php');
+?>
 <html>
     <head>
         <meta charset="utf-8">
@@ -43,9 +45,9 @@
                             <img src="Projekt_grafiki/Kontakty/Przyciski_emotki/PNG/emotka_zla_kontakty.png" class="negative_icon">
                         </div>
                     </div>
+                    <h2><a href = "php/logout.php">Sign Out</a></h2>
                 </div>
             </div>
         </div>
-
     </body>
 </html>
