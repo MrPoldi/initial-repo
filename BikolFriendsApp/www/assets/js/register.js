@@ -16,7 +16,7 @@ $(document).ready(function(){
       
       $.ajax({
             type: "POST",
-            url: "http://localhost/bikol/insert.php",
+            url: "http://localhost/initial-repo/php/insert.php",
             data: dataString,
             crossDomain: true,
             cache: false,
@@ -27,6 +27,7 @@ $(document).ready(function(){
                 if (data == "success") {
                     alert("inserted");
                     $("#login-button").val('Zatwierdź');
+                    window.open("index.html","_self");
                 } 
                 else if (data == "error") {
                        alert("error");
