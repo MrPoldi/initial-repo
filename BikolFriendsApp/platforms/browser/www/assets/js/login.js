@@ -16,6 +16,7 @@ $(document).ready(function(){
                   $("#login-butt").val('Loguje...');
               },
               success: function(data) {
+                  alert(data);
                   if (data == "success") {
                       alert("zalogowano");
                       window.open("contacts.html","_self")
