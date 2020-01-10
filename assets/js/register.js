@@ -24,7 +24,7 @@ $(document).ready(function(){
       
       $.ajax({
             type: "POST",
-            url: "http://localhost/bikol/insert.php",
+            url: "https://bikolapka.000webhostapp.com/insert.php",
             data: dataString,
             crossDomain: true,
             cache: false,
