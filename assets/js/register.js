@@ -10,22 +10,21 @@ $(document).ready(function(){
       var passwordConfirm = $("#password_confirm").val();
       var availability = $("#availability").val();
       
-      var correctPhoneNumberRegex = '^([+]\d{9,}|\d{9,})';
-      var correctAvailRegex = '^([01]\d|2[0-3]):([0-5]\d) - ([01]\d|2[0-3]):([0-5]\d)$';
+      var correctPhoneNumberRegex = /^([+]\d{9,}|\d{9,})/;
+      var correctAvailRegex = /^([01]\d|2[0-3]):([0-5]\d) - ([01]\d|2[0-3]):([0-5]\d)$/;
 
       var dataString;
-      
-      if(phoneNumber.val().match(correctPhoneNumberRegex)){
+      if(phoneNumber.match(correctPhoneNumberRegex)){
         // numer jest git
-        if(password.val().length == 0 || passwordConfirm.val().length == 0){
+        if(password.length == 0 || passwordConfirm.length == 0){
           // puste hasło
           alert("Password is empty!");
-        }else if(password.val() != passwordConfirm.val()){
+        }else if(password != passwordConfirm){
           // różne hasła
           alert("Passwords don't match")
         }else{
           // hasła są git
-          if(availability.val().match(correctAvailRegex)){
+          if(availability.match(correctAvailRegex)){
             // godziny są git
             dataString = "phone=" + phoneNumber + "&firstName=" + firstName + "&lastName=" + lastName + "&username=" + username + "&password=" + password + "&availability=" + availability + "&insert=";      
           //alert(dataString);      
@@ -56,17 +55,6 @@ $(document).ready(function(){
       }else{
         // numer jest źle
         alert("Wrong number format");
-      }
-
-      
-
-     
-
-      
-
-      
-
-
-      
+      }     
   });
 });
