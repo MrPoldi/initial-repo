@@ -8,7 +8,7 @@ $(document).ready(function(){
         $.ajax({
               type: "POST",
               //UWAGA NA URL!!
-              url: "http://localhost/initial-repo/php/login_check.php",
+              url: "https://bikolapka.000webhostapp.com/login_check.php",
               data: dataString,
               crossDomain: true,
               cache: false,

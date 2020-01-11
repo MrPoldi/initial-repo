@@ -1,6 +1,9 @@
 $(document).ready(function(){
   $("#login-button").click(function(){    
       var phoneNumber = $("#phonenumber").val();
+      phoneNumber.replace(/\s+/g, '');
+      phoneNumber.replace('+','');
+      
       var fullName = $("#userfullname").val();
       var spl = fullName.split(" ");
       var firstName = spl[0];
