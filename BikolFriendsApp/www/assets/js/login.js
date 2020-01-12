@@ -19,7 +19,7 @@ $(document).ready(function(){
                   alert(data);
                   if (data == "success") {
                       alert("zalogowano");
-                      window.open("contacts.html","_self")
+                      window.open("ustawienia.html","_self")
                   } 
                   else if (data == "error") {
                       alert("error");
