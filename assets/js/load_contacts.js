@@ -18,7 +18,7 @@ $(document).ready(function() {
                                 var class2 = "negative_icon";
                                 var imgsrc = "Projekt_grafiki/Kontakty/Przyciski_emotki/PNG/emotka_zla_kontakty.png";
                             }
-                        $("#contacts").append('<a href="'+ link +'"><div class="contact"> <div class="avatar"> </div> <div class="name">' + name + surname + '</div> <div class="'+ class1 + '">  <img src="'+ imgsrc + '" class="'+ class2 + '"> </div> </div></a>');
+                        $("#contacts").append('<div class="contact"  onclick="location.href=\''+link+'\'"> <div class="avatar"> </div> <div class="name">' + name + surname + '</div> <div class="'+ class1 + '">  <img src="'+ imgsrc + '" class="'+ class2 + '"> </div> </div>');
                     });
                 });
             });
