@@ -35,6 +35,8 @@ $(document).ready(function(){
                 if (data == "success") {
                     alert("inserted");
                     $("#login-button").val('Zatwierdź');
+                    window.open("index.html","_self")
+
                 } 
                 else if (data == "error") {
                        alert("error");
