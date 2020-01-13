@@ -6,8 +6,12 @@ $(document).ready(function(){
       
       var fullName = $("#userfullname").val();
       var spl = fullName.split(" ");
+          alert('Podaj imię oraz nazwisko po spacji');
+          return false;
+      }
       var firstName = spl[0];
       var lastName = spl[1];
+      
       var username = $("#username").val();
       var password = $("#password").val();
       var passwordConfirm = $("#password_confirm").val();
