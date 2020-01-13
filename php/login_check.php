@@ -4,7 +4,6 @@
     $myusername = $_POST['username'];
     $mypassword = $_POST['password'];
 
-    //ZMIENIC admin NA contacts!!!!!!!
     $sql = "SELECT nick FROM contacts WHERE nick = '$myusername' and password = '$mypassword'";
     $result = mysqli_query($con,$sql);
     $row = mysqli_fetch_array($result);
