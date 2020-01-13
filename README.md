@@ -1,4 +1,4 @@
-Strona dla bikola
+BikolApp
 
 # endpoints
  
