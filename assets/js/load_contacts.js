@@ -6,7 +6,7 @@ $(document).ready(function() {
                             var surname = field.surname;
                             var availability = field.availability;
                             var number = field.number;
-                            var link = "wa.me/" + number;
+                            var link = "https://wa.me/" + number;
 
                             if(availability == "1"){
                                 var class1 = "status_positive";
