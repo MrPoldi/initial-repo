@@ -6,6 +6,7 @@ $(document).ready(function(){
       
       var fullName = $("#userfullname").val();
       var spl = fullName.split(" ");
+      if (spl.length < 2) {
           alert('Podaj imię oraz nazwisko po spacji');
           return false;
       }
