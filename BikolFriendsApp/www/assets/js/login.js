@@ -17,7 +17,7 @@ $(document).ready(function(){
               },
               success: function(data) {
                   if (data == "success") {
-                      window.open("contacts.html","_self")
+                      window.open("ustawienia.html","_self")
                   } 
                   else if (data == "error") {
                       alert("Blad logowania!");

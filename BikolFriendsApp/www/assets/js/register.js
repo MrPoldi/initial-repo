@@ -63,6 +63,7 @@ $(document).ready(function(){
                     if (data == "success") {
                         alert("Sukces!");
                         $("#login-button").val('Zatwierdź');
+                        window.open("index.html","_self")
                     } 
                     else if (data == "error") {
                           alert("Blad!");
