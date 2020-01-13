@@ -21,10 +21,10 @@ $(document).ready(function(){
         // numer jest git
         if(password.length == 0 || passwordConfirm.length == 0){
           // puste hasło
-          alert("Password is empty!");
+          alert("Haslo jest puste!");
         }else if(password != passwordConfirm){
           // różne hasła
-          alert("Passwords don't match")
+          alert("Hasla nie zgadzaja sie!")
         }else{
           // hasła są git
           if(availability.match(correctAvailRegex)){
@@ -42,22 +42,22 @@ $(document).ready(function(){
                 },
                 success: function(data) {
                     if (data == "success") {
-                        alert("inserted");
+                        alert("Sukces!");
                         $("#login-button").val('Zatwierdź');
                     } 
                     else if (data == "error") {
-                          alert("error");
+                          alert("Blad!");
                     }
                 }
           });
           }else{
             // godziny nie są git
-            alert("Wrong availability format (example: 16:00 - 20:00");
+            alert("Zla dostepnosc format (przyklad: 16:00 - 20:00");
           }     
         }
       }else{
         // numer jest źle
-        alert("Wrong number format");
+        alert("Zle wpisany numer!");
       }     
   });
 });

@@ -17,11 +17,10 @@ $(document).ready(function(){
               },
               success: function(data) {
                   if (data == "success") {
-                      alert("zalogowano");
                       window.open("contacts.html","_self")
                   } 
                   else if (data == "error") {
-                      alert("error");
+                      alert("Blad!");
                   }
               }
         });
