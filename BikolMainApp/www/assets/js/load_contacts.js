@@ -8,7 +8,7 @@ $(document).ready(function() {
                             var number = field.number;
                             var link = "https://wa.me/" + number;
 
-                            if(availability == "1"){
+                            if(availability == true){
                                 var class1 = "status_positive";
                                 var class2 = "positive_icon";
                                 var imgsrc = "Projekt_grafiki/Kontakty/Przyciski_emotki/PNG/emotka_zla_dobra_kontakty.png";
