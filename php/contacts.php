@@ -8,7 +8,6 @@
 			$availability = $row->availability;
 			$date = date('H:i');
 			$time = explode(" ",$availability);
-			echo json_encode($time[0]);
 			if($time[0] < $date && $date < $time[2])
 			{
 				$availability_ = true;
