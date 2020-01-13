@@ -4,7 +4,7 @@
                     $data = array();
                     date_default_timezone_set("Europe/Warsaw");
 
-                    $query = mysqli_query($con, "SELECT number, name, surname, availability FROM contacts");
+                    $query = mysqli_query($con, "SELECT number, name, surname, availability FROM contacts ORDER BY name ASC");
                     while($row = mysqli_fetch_object($query)){
                         $availability = $row->availability;
                         $date = date('H:i');
