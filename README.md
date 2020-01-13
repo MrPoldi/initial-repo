@@ -1,4 +1,4 @@
-Strona dla bikola
+Bikolapka
 
 # endpoints
  
