@@ -1,5 +1,19 @@
 $(document).ready(function(){
-  $("#login-button").click(function(){    
+  $("#login-button").click(function(){
+      
+      var empty = false;
+      $('input[type="text"]').each(function(){
+            if($(this).val()==""){
+                empty = true;
+                return false;
+            }
+      });
+      
+      if(empty){
+          alert("Fill every field!");
+          return false;
+      }
+      
       var phoneNumber = $("#phonenumber").val();
       phoneNumber.replace(/\s+/g, '');
       phoneNumber.replace('+','');
